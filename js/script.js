@@ -6,4 +6,7 @@ window.onload = function() {
     canvas.setAttribute('width', width);
     canvas.setAttribute('height', height);
 
+    var render = new THREE.WebGLRenderer({canvas: canvas});
+    renderer.setClearColor(0x000000);
+
 }
