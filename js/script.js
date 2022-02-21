@@ -9,4 +9,11 @@ window.onload = function() {
     var render = new THREE.WebGLRenderer({canvas: canvas});
     renderer.setClearColor(0x000000);
 
+    var scene = new THREE.Scene();
+
+    var camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 5000);
+    camera.position.set(0, 0, 1000);
+
+    renderer.renderer(scene.camera);
+
 }
