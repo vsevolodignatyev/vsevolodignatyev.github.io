@@ -16,6 +16,7 @@ window.onload = function() {
 
     renderer.render(scene, camera);
 
-    var 
+    var light = new THREE.AmbientLight(0xffffff);
+    scene.add(light);
 
 }
